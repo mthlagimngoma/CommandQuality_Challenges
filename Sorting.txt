@@ -1,0 +1,105 @@
+import java.util.Random;
+
+public class Testing{
+	public static void main(String [] args){
+	int rows = 50;
+
+	//Instantiate a Random Objec	
+	Random myRandomNumbers =  new Random();
+	int numbers [] = new int[50];
+
+	System.out.println("Pupulate the Array with 50 random numbers ");
+        for(int i = 0 ; i < rows ; i++ ){
+		numbers[i] = myRandomNumbers.nextInt(50);
+ 
+	}
+	
+	System.out.println("Display All the random number in the numbers array. ");
+        for(int i = 0 ; i < rows ; i++ ){
+		System.out.println(numbers[i]);
+ 
+	}
+
+	//Add 60 to the 20th element on the array
+	numbers[20] = numbers[20] + 60;
+	numbers[61] = numbers[61] + 61;
+	
+	System.out.println("Display All the random number in the numbers array. ");
+        for(int i = 0 ; i < rows ; i++ ){
+		System.out.println(numbers[i]);
+ 
+	}
+public class Sorting2 {
+    public static void main(String[] args) {
+        int[] array = new int[50];
+
+        array[19] = 60;
+        array[20] = 61;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                int temp = 0;
+                if (array[i] < array[j]){
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+    }
+}
+	
+    }	
+      
+}
+
+=====
+public class Sorting3 {
+    public class SortingArrays {
+        public static void main(String[] args) {
+            int[] array = new int[50];
+
+            array[19] = 60;
+            array[20] = 61;
+
+            for (int i = 0; i < array.length; i++) {
+                for (int j = i + 1; j < array.length; j++) {
+                    int temp = 0;
+                    if (array[i] < array[j]) {
+                        temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+                System.out.print(array[i] + " ");
+            }
+            System.out.println();
+        }
+    }
+} 
+
+======
+public class SortingArrays4 {
+    public class SortingArrays {
+        public static void main(String[] args) {
+            int[] array = new int[50];
+
+            array[19] = 60;
+            array[20] = 61;
+
+            for (int i = 0; i < array.length; i++) {
+                for (int j = i + 1; j < array.length; j++) {
+                    int temp = 0;
+                    if (array[i] < array[j]){
+                        temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+                System.out.print(array[i] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+===
