@@ -1,0 +1,19 @@
+package com.company;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+    int  min =0;
+    int max = 100;
+
+    for(int k =min; k <= max ;k++){
+        if(k%3 == 0 && k%5==0) {
+            System.out.println("Fizzbuzz");
+        }else if(k%3==0) {
+            System.out.println("Fizz : ");
+        }else if(k%5==0){
+            System.out.println("Buzz : ");
+        }
+
+    }
