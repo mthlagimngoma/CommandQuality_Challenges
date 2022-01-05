@@ -1,15 +1,5 @@
 package menudrivencalculator;
-
-
-
 import java.util.Scanner;
-
-
-
-/**
-*
-* @author scelo
-*/
 public class MenuDrivenCalculator {
 
 
