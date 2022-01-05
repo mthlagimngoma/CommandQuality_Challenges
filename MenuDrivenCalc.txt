@@ -2,10 +2,6 @@ package menudrivencalculator;
 import java.util.Scanner;
 public class MenuDrivenCalculator {
 
-
-
-
-
 public static int addition(int num1, int num2){
 return num1 + num2;
 }
@@ -28,14 +24,12 @@ Scanner userInput = new Scanner(System.in);
 Scanner intScanner = new Scanner(System.in);
 int choice = 0;
 System.out.println("Menu Driven Calculator");
-System.out.println("====================================================");
+
 System.out.print("Enter the first number: ");
 String firstNumber = userInput.nextLine();
 int number1 = Integer.parseInt(firstNumber);
-System.out.println("Enter the mathematical operation you want to perform");
-System.out.println("====================================================");
-System.out.println("+ - Addition\n- - Subtraction\n* - Multiplication\n/ - Division");
-System.out.println("====================================================");
+System.out.println(" mathematical operation [ + - * / ]:");
+
 String operator = userInput.nextLine();
 System.out.print("Enter the second number: ");
 String secondNumber = userInput.nextLine();
@@ -64,4 +58,17 @@ break;
 }
 }
 
+}
+//The same problem can also be solved using an if statement 
+if(operator == "+"){
+System.out.println(number1 + " + " + number2 + " = " + addition(number1, number2));
+}else if(operator == "-"){
+System.out.println(number1 + " - " + number2 + " = " + subtraction(number1, number2));
+}else if(operator == "/"){
+System.out.println(number1 + " / " + number2 + " = " + division(number1, number2));
+}else if(operator == "*"){
+System.out.println(number1 + " * " + number2 + " = " + multiplication(number1, number2));
+}else{
+      //Invalid selection Made
+      system.out.println("Learn to select the valid options given.");  
 }
